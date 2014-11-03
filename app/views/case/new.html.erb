@@ -1,0 +1,36 @@
+
+<% provide(:title, 'Report a case') %>
+<%= render 'layouts/mainnav' %>
+
+
+
+<%= form_for :case, url: '/case/create' do |f| %>
+<div>
+  <p>
+    <%= f.label :continent %><br>
+    <%= f.select :continent , ["Select a continent","Africa","North America","South America","Asia","Europe","Australia","Antarctica"] %>
+  </p>
+ 
+  <p>
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </p>
+
+  <p>
+    <%= f.label :district %><br>
+    <%= f.text_field :district %>
+  </p>
+  <p>
+    <%= f.label :case_category %><br>
+    <%= f.select :case_category, ["Select a category of violence","Dating violence" , "Domestic and intimate partner violence" ,"Emotional abuse" , "Human trafficking", "Same-sex relationship violence" , "Sexual assault and abuse" , "Stalking" , "Violence against immigrant and refugee women" , "Violence against women at work" , "Violence against women with disabilities"]%>
+  </p>
+   <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+</div>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
