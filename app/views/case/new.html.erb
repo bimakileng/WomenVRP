@@ -7,18 +7,14 @@
 <%= form_for :case, url: '/case/create' do |f| %>
 <div>
   <p>
-    <%= f.label :continent %><br>
-    <%= f.select :continent , ["Select a continent","Africa","North America","South America","Asia","Europe","Australia","Antarctica"] %>
-  </p>
- 
   <p>
     <%= f.label :country %><br>
-    <%= f.text_field :country %>
+    <%= f.select :country , ["Uganda"] %>
   </p>
 
   <p>
     <%= f.label :district %><br>
-    <%= f.text_field :district %>
+    <%= f.select :district , ["jinja" , "kamuli","kampala"]%>
   </p>
   <p>
     <%= f.label :case_category %><br>
