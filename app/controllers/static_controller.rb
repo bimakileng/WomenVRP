@@ -7,8 +7,4 @@ class StaticController < ApplicationController
 
   def contact
   end
-  
-  def dependent
-  	
-  end
 end
