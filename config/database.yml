@@ -9,6 +9,11 @@ default: &default
   pool: 5
   timeout: 5000
 
+production: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+
 development:
   <<: *default
   database: db/development.sqlite3

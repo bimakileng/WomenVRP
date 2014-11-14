@@ -7,6 +7,7 @@ gem 'faker'
 gem 'jquery-rails'
 gem 'therubyracer'
 gem 'coffee-rails'
+gem 'heroku'
 
 
 
