@@ -6,6 +6,11 @@
 
 <%= form_for :case, url: '/case/create' do |f| %>
 <div>
+
+  <p>
+    <%= f.label :continent %><br>
+    <%= f.select :continent , ["Africa"] %>
+  </p>
   <p>
   <p>
     <%= f.label :country %><br>
