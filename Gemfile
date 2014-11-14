@@ -5,7 +5,7 @@ gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby'
 gem 'faker'
 gem 'jquery-rails'
-gem 'therubyracer'
+gem 'therubyracer' 
 gem 'heroku'
 
 
