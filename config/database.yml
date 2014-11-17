@@ -11,10 +11,12 @@ default: &default
 
 production: 
   adapter: postgresql
+  host: localhost
   pool: 5
   timeout: 5000
   database: dfw_db
-  
+  username:
+  password:
 
 development:
   <<: *default

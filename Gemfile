@@ -7,12 +7,12 @@ gem 'faker'
 gem 'jquery-rails'
 gem 'therubyracer' 
 gem 'heroku'
-gem 'pg'
 
 
 
 
-group :development do
+
+group :development , :test do
 	gem 'sqlite3'
 	gem 'annotate'
 end
