@@ -7,7 +7,7 @@ class CaseControllerTest < ActionController::TestCase
   end
 
   test "should get create" do
-    get :create
+    post :create
     assert_response :success
   end
 
