@@ -1,16 +1,21 @@
 class CaseController < ApplicationController
   def new
-  	@case = Case.new(params[:case])
+  	@case = Case.new
   end
 
   def create	
-    @case = Case.new()
+    @case = Case.create(case_params)
     if @case.save
-      flash[:success] = "Your report has successfully been submited!"
       redirect_to '/'
     else
       render 'new'
     end
   
   end
+
+  def case_params
+        params.require(:case).permit(:continent , :country , :district , :case_category , :description )
+  end
+
+
 end
