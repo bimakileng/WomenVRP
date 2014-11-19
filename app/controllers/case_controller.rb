@@ -14,7 +14,11 @@ class CaseController < ApplicationController
   end
 
   def case_params
-        params.require(:case).permit(:continent , :country , :district , :case_category , :description )
+        params.require(:case).permit(:continent
+:country 
+:district
+:case_category,
+:description )
   end
 
 
